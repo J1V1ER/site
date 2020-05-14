@@ -2,9 +2,21 @@
 <html>
 <head>
 <style>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Создать градиент
+var grd = ctx.createLinearGradient(0, 0, 200, 0);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+
+// Заливка градиентом
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
+    
 div.container {
     width: 100%;
-    border: 1px solid gray;
+    border: 1px solid grd;
 }
 
 header, footer {
@@ -40,7 +52,7 @@ article {
 </style>
 </head>
 <body>
-
+    
 
 
 <div class="container">
