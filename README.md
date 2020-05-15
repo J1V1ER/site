@@ -1,2 +1,2 @@
-# kolyalox.github.io
+# beta-site.github.io
 сайт на HTML(вау)
